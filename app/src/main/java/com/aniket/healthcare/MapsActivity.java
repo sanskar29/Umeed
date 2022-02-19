@@ -150,8 +150,8 @@ googleurl.append("&type="+s);
                 transferdata[0]=mMap;
                 transferdata[1]=url1;
                 getNearbyPlaces.execute(transferdata);
-                Toast.makeText(this,"seaching for nearby policeStation",Toast.LENGTH_LONG).show();
-                Toast.makeText(this,"showing nearby police Station",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"seaching for nearby fireStation",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"showing nearby fireStation",Toast.LENGTH_LONG).show();
                 break;
 
 
@@ -170,8 +170,8 @@ googleurl.append("&type="+s);
                 transferdata[0]=mMap;
                 transferdata[1]=url2;
                 getNearbyPlaces.execute(transferdata);
-                Toast.makeText(this,"seaching for nearby fireStation",Toast.LENGTH_LONG).show();
-                Toast.makeText(this,"showing nearby fireStation",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"seaching for nearby policeStation",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"showing nearby policeStation",Toast.LENGTH_LONG).show();
                 break;
 
 
@@ -218,7 +218,7 @@ googleurl.append("&type="+s);
             public void onSuccess(@NonNull Location location) {
                 if (location != null) {
                     currentLocation = location;
-                    Toast.makeText(getApplicationContext(),"This is my Toast message!", (int)Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),"This is my Toast message!", (int)Toast.LENGTH_LONG).show();
                     SupportMapFragment supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
                     //assert supportMapFragment != null;
                     supportMapFragment.getMapAsync(MapsActivity.this);
